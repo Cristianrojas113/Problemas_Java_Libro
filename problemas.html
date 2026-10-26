@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Hombre que Calculaba - Ejercicios JavaScript</title>
+  
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>El Hombre que Calculaba</h1>
+    <p class="subtitle">Soluciones interactivas con JavaScript</p>
+
+    <!-- PROBLEMA 1 -->
+    <div class="card">
+      <h2>1. El Reparto de los Camellos</h2>
+      <p class="chapter-info"><b>Capítulo III:</b> Beremiz resuelve la herencia de 35 camellos agregando 1 camello prestado para hacer las divisiones exactas.</p>
+      
+      <form onsubmit="event.preventDefault(); calcularCamellos();">
+        <label for="camellos">Número inicial de camellos:</label>
+        <input type="number" id="camellos" value="35" min="1" required>
+        <button type="submit">Calcular Reparto</button>
+      </form>
+
+      <div id="outCamellos"></div>
+    </div>
+
+    <!-- PROBLEMA 2 -->
+    <div class="card">
+      <h2>2. Los Granos de Trigo en el Tablero</h2>
+      <p class="chapter-info"><b>Capítulo XVI:</b> La recompensa del inventor del ajedrez duplicando los granos de trigo en cada casilla ($2^n - 1$).</p>
+      
+      <form onsubmit="event.preventDefault(); calcularTrigo();">
+        <label for="casillas">Número de casillas (1 a 64):</label>
+        <input type="number" id="casillas" value="64" min="1" max="64" required>
+        <button type="submit">Calcular Trigo</button>
+      </form>
+
+      <div id="outTrigo"></div>
+    </div>
+
+<div class="container">
+    <h1>Problemas de Algoritmos y Matemáticas</h1>
+    <p class="subtitle">Convertidos de scripts a aplicaciones web interactivas con JavaScript</p>
+
+    <!-- PROBLEMA 12: Ecuación Cuadrática -->
+    <div class="card">
+  <h2>1. Raíces de una Ecuación Cuadrática ($ax^2 + bx + c = 0$)</h2>
+  <p class="chapter-info"><b>Problema 12:</b> Calcula el discriminante $D = b^2 - 4ac$ para determinar si tiene dos raíces, una raíz o ninguna raíz real.</p>
+  
+  <form onsubmit="event.preventDefault(); resolverCuadratica();">
+    <div class="input-group">
+      <label for="valA">Valor de a:</label>
+      <input type="number" id="valA" value="1" step="any" required>
+    </div>
+    <div class="input-group">
+      <label for="valB">Valor de b:</label>
+      <input type="number" id="valB" value="6" step="any" required>
+    </div>
+    <div class="input-group">
+      <label for="valC">Valor de c:</label>
+      <input type="number" id="valC" value="9" step="any" required>
+    </div>
+    <button type="submit">Calcular Raíces</button>
+  </form>
+
+  <div id="outCuadratica"></div>
+</div>
+
+    <!-- PROBLEMA 13: Estimación de Pi -->
+    <div class="card">
+      <h2>2. Estimación de Pi por Serie Numérica</h2>
+      <p class="chapter-info"><b>Problema 13:</b> Calcula $\pi$ usando la fórmula $\sqrt{6 \left(\sum \frac{1}{n^2}\right)}$ mediante un bucle iterativo para un valor de $n$.</p>
+      
+      <form onsubmit="event.preventDefault(); calcularPi();">
+        <div class="input-group">
+          <label for="valN">Valor de n (iteraciones):</label>
+          <input type="number" id="valN" value="100" min="1" required>
+        </div>
+        <button type="submit">Estimar Pi</button>
+      </form>
+
+      <div id="outPi"></div>
+    </div>
+  </div>
+
+  <!-- Enlace al archivo JavaScript externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>

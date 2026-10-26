@@ -1,0 +1,138 @@
+/* Reset de márgenes y estilos básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.chapter-info {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Formato de los cuadros de resultado */
+.resultado {
+  background-color: #eef9f1;
+  border-left: 5px solid #2ecc71;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.resultado ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.resultado-numero {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+  word-break: break-all;
+  margin-top: 5px;
+}
+/* Estilo de los formularios 12 y 13 */
+form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Campos de entrada */
+form input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2878b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+form button:hover {
+  background-color: #185786;
+}
